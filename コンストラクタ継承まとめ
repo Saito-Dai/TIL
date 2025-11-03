@@ -18,7 +18,7 @@ namespace Coding.Exercise
     {
         // TODO: Declare a constructor that takes a name and an ID, and calls the base class constructor
         public Employee (string name, int id) : base(name)  //基底クラス由来の情報を格納する引数を自身も用意する必要がある。
-        {
+        {                                                   // baseによる呼び出しは基底クラスに完全一致する必要がある。(コンパイルエラーの原因)
             Id = id;
             Console.WriteLine($"Employee constructor: {Name}, ID: {Id}");
         }
