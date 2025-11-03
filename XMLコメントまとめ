@@ -1,0 +1,27 @@
+/// <summary>　⇐　メソッドやクラスの概要を記述
+/// このクラスはユーザー情報を管理します。
+/// </summary>
+public class User
+{
+    /// <summary>
+    /// ユーザー名を取得または設定します。
+    /// </summary>
+    public string Name { get; set; }
+
+    /// <summary>
+    /// ユーザーの挨拶を表示します。
+    /// </summary>
+    /// <param name="greeting">挨拶のメッセージ</param>　⇐　引数の説明　　このコードでは挨拶文を受け取る。
+    /// <returns>整形された挨拶文</returns>　　　　　　　 ⇐　戻り値の説明　文章として整えた文章が返り値になる　
+    public string SayHello(string greeting)
+    {
+        return $"{greeting}, {Name}!";
+    }
+}
+
+<summary>　メソッドやクラスの概要
+<param>  　引数の説明
+<returns>  戻り値の説明
+<remarks>  補足説明
+<exception>投げる可能性のある例外
+<example>  使用例を示す
