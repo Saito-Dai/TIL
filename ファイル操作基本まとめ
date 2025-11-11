@@ -17,7 +17,7 @@ File.Copy(src, dest)      → ファイルをコピー
 File.Move(src, dest)      → ファイルを移動またはリネーム
 File.ReadAllText(path)    → ファイル全体を文字列として読み込み
 File.WriteAllText(path, text) → ファイルに文字列を書き込み（上書き）
-File.AppendAllText(path, text) → ファイル末尾に追記
+File.AppendAllText(path, text) → ファイル末尾に追記(ファイルがなければ指定されたパスに自動生成)
 
 特徴：
 ・すべてのメソッドが static（インスタンス不要）
